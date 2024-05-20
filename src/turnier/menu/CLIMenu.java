@@ -3,6 +3,7 @@
  */
 package turnier.menu;
 
+import java.io.File;
 import java.util.Scanner;
 
 import turnier.Menu;
@@ -64,9 +65,10 @@ public class CLIMenu implements Menu {
 	public void createNewProject(String projectFile) {
 		fl.createProjectFile(projectFile);
 	}
-
+	
 	@Override
-	public void loadProject(String projectFile) {
+	public File loadProject(String projectFile) {
+		return null;
 		// TODO Auto-generated method stub
 
 	}

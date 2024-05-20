@@ -1,5 +1,7 @@
 package turnier;
 
+import java.io.File;
+
 public interface Menu {
 
 	/**
@@ -20,7 +22,7 @@ public interface Menu {
 	 * 
 	 * @param projectFile - the filepath to the project
 	 */
-	public void loadProject(String projectFile);
+	public File loadProject(String projectFile);
 	
 	/**
 	 * saves a Project to file.
