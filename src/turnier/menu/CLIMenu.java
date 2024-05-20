@@ -68,9 +68,7 @@ public class CLIMenu implements Menu {
 	
 	@Override
 	public File loadProject(String projectFile) {
-		return null;
-		// TODO Auto-generated method stub
-
+		return fl.loadProjectFile(projectFile);
 	}
 
 	@Override

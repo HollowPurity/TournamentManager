@@ -24,8 +24,7 @@ public class FileHandler implements ProjectHandler{
 
 	@Override
 	public File loadProjectFile(String filename) {
-		// TODO Auto-generated method stub
-		return null;
+		return new File(filename + ".prj");
 	}
 
 	@Override
