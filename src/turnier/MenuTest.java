@@ -44,6 +44,14 @@ class MenuTest {
 		File f = new File(VALID_FILE_NAME + ".prj");
 		assertTrue(f.exists() && !f.isDirectory());
 	}
+	
+	@Test
+	void testLoadProject() {
+		myMenu.createNewProject(VALID_FILE_NAME);
+		File f = myMenu.loadProject(VALID_FILE_NAME);
+		assertTrue(f.exists() && !f.isDirectory());
+		assertTrue(f.getName().equals(VALID_FILE_NAME + ".prj"));
+	}
 
 
 }
