@@ -68,12 +68,16 @@ public class CLIMenu implements Menu {
 	
 	@Override
 	public File loadProject(String projectFile) {
+		currentProject = projectFile;
 		return fl.loadProjectFile(projectFile);
 	}
 
 	@Override
 	public void saveProject() {
-		// TODO Auto-generated method stub
+		if(currentProject == null) {
+			System.err.println("No Project loaded yet!");
+		}
+		fl.saveToProjectFile(currentProject);
 
 	}
 
